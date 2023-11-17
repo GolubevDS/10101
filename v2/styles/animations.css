@@ -1,0 +1,39 @@
+@keyframes fadeOutOverlay {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes textReveal {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes showSlideOverlay {
+  from {
+    clip-path: inset(0 0 0 100%);
+  }
+  50% {
+    clip-path: inset(0 0 0 0);
+  }
+  to {
+    clip-path: inset(0 calc(100% - var(--sliding-overlay-width)) 0 0);
+  }
+}
+
+@keyframes slideClipPath {
+  from,
+  to {
+    clip-path: inset(0 calc(100% - var(--sliding-overlay-width)) 0 0);
+  }
+  50% {
+    clip-path: inset(0 0 0 calc(100% - var(--sliding-overlay-width)));
+  }
+}

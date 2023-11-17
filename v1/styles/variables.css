@@ -1,0 +1,20 @@
+:root {
+  --background-color-default: #e3e3e3;
+  --background-color-overlay: #b7b7b7;
+  --text-color-primary: #323232;
+  --text-color-highlight: #e3e3e3;
+  --font-outline: #323232;
+  --font-family: "Helvetica Bold", monospace;
+  --spacing: 15px;
+  --sliding-overlay-width: 300px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color-default: #323232;
+    --background-color-overlay: #b7b7b7;
+    --text-color-primary: #e3e3e3;
+    --text-color-highlight: #323232;
+    --font-outline: #e3e3e3;
+  }
+}

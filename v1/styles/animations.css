@@ -1,0 +1,9 @@
+@keyframes slide-clip {
+  0%,
+  100% {
+    clip-path: inset(0 calc(100% - var(--sliding-overlay-width)) 0 0);
+  }
+  50% {
+    clip-path: inset(0 0 0 calc(100% - var(--sliding-overlay-width)));
+  }
+}

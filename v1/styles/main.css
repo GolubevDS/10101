@@ -1,0 +1,54 @@
+@import "variables.css";
+@import "typography.css";
+@import "animations.css";
+@import "responsive.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--font-family);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container > section {
+  padding: 0 var(--spacing);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.visible-content {
+  background-color: var(--background-color-default);
+  width: 100%;
+}
+
+.sliding-overlay {
+  background-color: var(--background-color-overlay);
+  position: absolute;
+  width: fit-content;
+  animation: slide-clip 7s 500ms infinite cubic-bezier(0.25, 0, 0.25, 1);
+  clip-path: inset(0 calc(100% - var(--sliding-overlay-width)) 0 0);
+  will-change: clip-path;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sliding-overlay {
+    animation: none;
+  }
+}

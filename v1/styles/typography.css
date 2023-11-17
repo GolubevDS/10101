@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Helvetica Bold";
+  src: url("../fonts/HelveticaBold.woff2") format("woff2"),
+    url("../fonts/HelveticaBold.woff") format("woff"),
+    url("../fonts/HelveticaBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-size: 104px;
+  text-transform: uppercase;
+  color: var(--text-color-primary);
+}
+
+.sliding-overlay .title {
+  color: var(--text-color-highlight);
+  -webkit-text-stroke: 2px var(--text-color-primary);
+}
