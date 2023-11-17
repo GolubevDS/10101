@@ -30,7 +30,7 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
 }
 
 .background-overlay {
@@ -65,10 +65,4 @@ html {
   .sliding-overlay {
     animation: none;
   }
-}
-
-.title {
-  font-family: var(--font-family);
-  font-size: 104px;
-  text-transform: uppercase;
 }

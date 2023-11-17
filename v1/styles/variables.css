@@ -6,7 +6,7 @@
   --font-outline: #323232;
   --font-family: "Helvetica Bold", monospace;
   --spacing: 15px;
-  --sliding-overlay-width: 300px;
+  --sliding-overlay-width: 50%;
 }
 
 @media (prefers-color-scheme: dark) {

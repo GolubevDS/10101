@@ -9,7 +9,6 @@
 }
 
 .title {
-  font-family: var(--font-family);
   font-size: 104px;
   text-transform: uppercase;
 }
@@ -33,7 +32,6 @@
 }
 
 .sliding-overlay .title {
-  font-family: var(--font-family);
   color: var(--text-color-highlight);
   -webkit-text-stroke: 2px var(--text-color-primary);
 }
